@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotoDetailedController.swift
 //  My_lesson20_UITableView+Model+CustomCell
 //
 //  Created by Олег Чудновский on 31.05.2020.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+class PhotoDetailedController: ViewController {
+    
+    override func setup() {
+        super.setup()
+        self.title = "PhotoDetailed"
     }
-
-
 }
-
