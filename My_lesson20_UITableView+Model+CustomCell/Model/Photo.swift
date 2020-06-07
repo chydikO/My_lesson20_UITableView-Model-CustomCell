@@ -9,5 +9,6 @@
 import Foundation
 
 struct Photo {
+    let photoPath : String
     
 }

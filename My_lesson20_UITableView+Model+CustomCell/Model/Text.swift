@@ -9,5 +9,5 @@
 import Foundation
 
 struct Text {
-    
+    let content: String
 }

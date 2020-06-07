@@ -9,6 +9,11 @@
 import Foundation
 
 struct News {
-    
+    let title: String
+    let subTitle: String
+    let date: String
+    let logoUrl: String
+    //let text: Text
+
 
 }
