@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78D859FD0EDB03F78698A9DB /* Pods_My_lesson20_UITableView_Model_CustomCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38377BD4B4DD10F2D5E33EF7 /* Pods_My_lesson20_UITableView_Model_CustomCell.framework */; };
 		AF30E4BE2483B4A5000F5910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF30E4BD2483B4A5000F5910 /* AppDelegate.swift */; };
 		AF30E4C22483B4A5000F5910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF30E4C12483B4A5000F5910 /* ViewController.swift */; };
 		AF30E4C52483B4A5000F5910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF30E4C32483B4A5000F5910 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38377BD4B4DD10F2D5E33EF7 /* Pods_My_lesson20_UITableView_Model_CustomCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_lesson20_UITableView_Model_CustomCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0C9FC2DD054F131E02B8EA /* Pods-My_lesson20_UITableView+Model+CustomCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_lesson20_UITableView+Model+CustomCell.debug.xcconfig"; path = "Target Support Files/Pods-My_lesson20_UITableView+Model+CustomCell/Pods-My_lesson20_UITableView+Model+CustomCell.debug.xcconfig"; sourceTree = "<group>"; };
 		AF30E4BA2483B4A5000F5910 /* My_lesson20_UITableView+Model+CustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My_lesson20_UITableView+Model+CustomCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF30E4BD2483B4A5000F5910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF30E4C12483B4A5000F5910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		AF30E4E62483BCDB000F5910 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		AF30E4E82483BCF3000F5910 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		AF30E4EB2483D004000F5910 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		CEDB0D9A3BF7F1B7766A49B7 /* Pods-My_lesson20_UITableView+Model+CustomCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_lesson20_UITableView+Model+CustomCell.release.xcconfig"; path = "Target Support Files/Pods-My_lesson20_UITableView+Model+CustomCell/Pods-My_lesson20_UITableView+Model+CustomCell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D859FD0EDB03F78698A9DB /* Pods_My_lesson20_UITableView_Model_CustomCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BBE0E4B7839456FCF04CA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D0C9FC2DD054F131E02B8EA /* Pods-My_lesson20_UITableView+Model+CustomCell.debug.xcconfig */,
+				CEDB0D9A3BF7F1B7766A49B7 /* Pods-My_lesson20_UITableView+Model+CustomCell.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BC86EFA482F0CAC51D8FEA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38377BD4B4DD10F2D5E33EF7 /* Pods_My_lesson20_UITableView_Model_CustomCell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF30E4B12483B4A5000F5910 = {
 			isa = PBXGroup;
 			children = (
 				AF30E4BC2483B4A5000F5910 /* My_lesson20_UITableView+Model+CustomCell */,
 				AF30E4BB2483B4A5000F5910 /* Products */,
+				6BBE0E4B7839456FCF04CA86 /* Pods */,
+				8BC86EFA482F0CAC51D8FEA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF30E4CE2483B4A9000F5910 /* Build configuration list for PBXNativeTarget "My_lesson20_UITableView+Model+CustomCell" */;
 			buildPhases = (
+				13C7E9E8457C96C8094F1BF3 /* [CP] Check Pods Manifest.lock */,
 				AF30E4B62483B4A5000F5910 /* Sources */,
 				AF30E4B72483B4A5000F5910 /* Frameworks */,
 				AF30E4B82483B4A5000F5910 /* Resources */,
+				724264EC927611A64114C230 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13C7E9E8457C96C8094F1BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My_lesson20_UITableView+Model+CustomCell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		724264EC927611A64114C230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My_lesson20_UITableView+Model+CustomCell/Pods-My_lesson20_UITableView+Model+CustomCell-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My_lesson20_UITableView+Model+CustomCell/Pods-My_lesson20_UITableView+Model+CustomCell-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My_lesson20_UITableView+Model+CustomCell/Pods-My_lesson20_UITableView+Model+CustomCell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF30E4B62483B4A5000F5910 /* Sources */ = {
@@ -382,6 +451,7 @@
 		};
 		AF30E4CF2483B4A9000F5910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0C9FC2DD054F131E02B8EA /* Pods-My_lesson20_UITableView+Model+CustomCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -401,6 +471,7 @@
 		};
 		AF30E4D02483B4A9000F5910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDB0D9A3BF7F1B7766A49B7 /* Pods-My_lesson20_UITableView+Model+CustomCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

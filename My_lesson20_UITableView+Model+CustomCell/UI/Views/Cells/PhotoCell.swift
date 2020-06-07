@@ -10,7 +10,15 @@ import UIKit
 
 class PhotoCell: UITableViewCell {
 
-    var model: Photo?
+    var model: Photo?{
+        didSet{
+            if let path = model?.photoPath {
+                photoImage?.sd_setImage(with: URL(string: path))
+            } else {
+                photoImage?.image = nil
+            }
+        }
+    }
     
     
     @IBOutlet private var photoImage: UIImageView?
