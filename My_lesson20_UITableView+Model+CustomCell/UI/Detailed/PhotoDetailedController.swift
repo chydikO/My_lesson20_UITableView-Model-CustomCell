@@ -10,8 +10,21 @@ import UIKit
 
 class PhotoDetailedController: ViewController {
     
+     @IBOutlet private var photoImage: UIImageView?
+
+    var model: Photo?
+    
     override func setup() {
         super.setup()
         self.title = "PhotoDetailed"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let path = model?.photoPath {
+            photoImage?.sd_setImage(with: URL(string: path))
+        } else {
+            photoImage?.image = nil
+        }
     }
 }

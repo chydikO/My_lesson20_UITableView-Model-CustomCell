@@ -24,13 +24,18 @@ class ListController: ViewController {
         dataSource.append(contentsOf: DataProvider.shared.models())
         tableView?.reloadData()
     }
-}
-
-extension ListController: UITableViewDelegate {
     
+    //MARK: - Navigation with Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //если я перешел с ячейки PhotoCell на контроллер PhotoDetailedController
+        if let cell = sender as? PhotoCell,
+            let controller = segue.destination as? PhotoDetailedController {
+            controller.model = cell.model
+        }
+    }
 }
 
-extension ListController: UITableViewDataSource {
+extension ListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -57,5 +62,15 @@ extension ListController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if #available(iOS 13.0, *) {
+            if let model = dataSource[indexPath.row] as? News,
+                let controller = self.storyboard?.instantiateViewController(identifier: "newsDetailedController") as? NewsDetailedController {
+                controller.model = model
+                self.navigationController?.pushViewController(controller, animated: true )
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
